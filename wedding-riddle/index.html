@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+      window.setRiddleAnswer = (id, text) => {
+        const el = document.getElementById(id);
+        el.innerHTML = '<b class="block pb-2 font-bold">' + text + '</b>';
+      }
+    </script>
+    <style>
+      .img {
+        background-size: cover;
+        height: 200px;
+        width: 100%;        
+      }
+
+      #question-1 .img {
+        background-image: Url('./question-1.png');
+      }
+      #question-2 .img {
+        background-image: Url('./question-2.png');
+      }
+      #question-3 .img {
+        background-image: Url('./question-3.png');
+      }
+      #question-4 .img {
+        background-image: Url('./question-4.jpg');
+      }
+    </style>
+  </head>
+  <body class="container block mx-auto lg:w-1/2 p-5">
+    <h1 class="text-2xl">
+      Hochzeitsrätsel
+    </h1>
+
+    <p>Konntet ihr alle Rätsel lösen? Wenn nicht, schaut euch die Lösungen an</p>
+
+    <div id="question-1" class="max-w-sm rounded overflow-hidden shadow-lg mt-12">
+      <div class="img"></div>
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Frage 1</div>
+        <p class="text-gray-700 text-base">
+          Viele Liebende haben zur Lösung dieses Rätsels einen Hinweis hinterlassen: „Schon der alte Ceasar hat mit diesem Spruch mit seiner Geliebten alles besiegt. Was steht auf dem Schild?
+        </p>
+      </div>
+      <div id="answer-1" class="px-6 pt-4 pb-2">
+        <button
+          onClick="setRiddleAnswer('answer-1', 'Antwort: Omnia vincet amor (6)')"
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          Antwort anzeigen
+        </button>
+      </div>
+    </div>
+
+    <div id="question-2" class="max-w-sm rounded overflow-hidden shadow-lg mt-12">
+      <div class="img"></div>
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Frage 2</div>
+        <p class="text-gray-700 text-base">
+          Griechische Götter weisen euch den Weg! Findet das Licht und lasst euch nicht vom Paketboten abhalten. Die Ehe zu ehren und gemeinsam am Herd zu stehen. Jagt in der Natur und im Gewässer. Finden könnt ihr nur was ihr sucht, bei der Göttin der Liebe.
+        </p>
+      </div>
+      <div id="answer-2" class="px-6 pt-4 pb-2">
+        <button
+          onClick="setRiddleAnswer('answer-2', 'Antwort: 7')"
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          Antwort anzeigen
+        </button>
+      </div>
+    </div>
+
+    <div id="question-3" class="max-w-sm rounded overflow-hidden shadow-lg mt-12">
+      <div class="img"></div>
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Frage 3</div>
+        <p class="text-gray-700 text-base">
+          Zum Glück gehört zu einem glücklichen Leben, auch anderen Glück zu schenken. Versucht die 9 Symbole für Glück auf die 9 verschiedene Ehepaare aufzuteilen und ich lasse euch gewähren.
+        </p>
+      </div>
+      <div id="answer-3" class="px-6 pt-4 pb-2">
+        <button
+          onClick="setRiddleAnswer('answer-3', 'Antwort: Sieht aus wie eine 2.')"
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          Antwort anzeigen
+        </button>
+      </div>
+    </div>
+
+    <div id="question-4" class="max-w-sm rounded overflow-hidden shadow-lg mt-12">
+      <div class="img"></div>
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Frage 4</div>
+        <p class="text-gray-700 text-base">
+          Welche Fehler wurden in den Text eingebaut?
+        </p>
+      </div>
+      <div id="answer-4" class="px-6 pt-4 pb-2">
+        <button
+          onClick="setRiddleAnswer('answer-4', 'Antwort: n e u n (9)')"
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          Antwort anzeigen
+        </button>
+      </div>
+    </div> 
+  </body>
+</html>
